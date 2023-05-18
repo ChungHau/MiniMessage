@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  main
+    each message in messages
+      p= message.user
+      p= message.text + ' ' + message.added
+
+    a(href='/new') New Massge
